@@ -1,0 +1,93 @@
+<?php
+class livenow extends CI_Controller{
+
+	public function __construct(){
+		parent::__construct();
+		$this->load->helper(array('url','form'));
+		$this->load->model('admin/livenow_model');
+		session_start();
+	}
+	public function index(){
+		$Template['template']='live_now';
+		$fckeditorConfig = array(
+		'instanceName' => 'add_content',
+		'BasePath' => base_url().'FCKeditor/',
+		'ToolbarSet' => 'custom',
+		'Width' => '100%',
+		'Height' => '200',
+		'Value' => ''
+		);
+		$this->load->library('fckeditor', $fckeditorConfig);
+		$this->load->view('admin_template',$Template);
+	}
+	
+	public function GetData(){
+		$Data=$this->livenow_model->GetArticleData(731);
+		$Content=array();
+		$Fullcontent=array();
+		foreach($Data as $Datavalue):
+			$Article_title='<span class="art_title_'.$Datavalue->content_id.'">'.$Datavalue->title.'</span>';
+			$Add='<button class="btn btn-primary" onclick="livenow_add('.$Datavalue->content_id.')"><i class="fa fa-plus-square" aria-hidden="true"></i></button>';
+			$Edit='<button class="btn btn-primary warn" onclick="livenow_edit('.$Datavalue->content_id.')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></i></button>';
+			//$Delete='<button class="btn btn-primary del" onclick="livenow_delete('.$Datavalue->content_id.')"><i class="fa fa-trash-o" aria-hidden="true"></i></button>';
+			$Fullcontent[]=array("articleid"=>$Datavalue->content_id,"articletitle"=>$Article_title,"add"=>$Add,"edit"=>$Edit);
+		endforeach;
+		$Result=array("sEcho" => 1,"iTotalRecords" => count($Fullcontent),"iTotalDisplayRecords" => count($Fullcontent),"aaData"=>$Fullcontent);
+		echo json_encode($Result);
+	}
+	
+	public function addDetails(){
+		$articleId=$this->input->post('article_id');
+		$Title=$this->input->post('title');
+		$Content=$this->input->post('content');
+		//$Content=htmlentities($this->input->post('content'));
+		$data=array("title"=>$Title,"content"=>$Content,"article_id"=>$articleId);
+		echo $this->livenow_model->add_details($data);
+	}
+	
+	public function EditDetails(){
+		$articleId=$this->input->post('article_id');
+		$Data=$this->livenow_model->edit_details($articleId);
+		if($Data==0){
+			echo 'EMPTY';
+		}else{
+			$template='<table class="table table-bordered">';
+			$template .='<tr><th>title</th><th>content</th><th>action</th></tr>';
+			foreach($Data as $DataValue){
+				$template .='<tr class="remove_'.$DataValue->lid.'">';
+				$template .='<td>';
+				$template .='<input type="text" id="edit_input'.$DataValue->lid.'" value="'.$DataValue->title.'" class="form-control">';
+				$template .='</td>';
+				$template .='<td>';
+				$template .='<textarea  id="edit_txtarea'.$DataValue->lid.'"  style="min-height: 50px;" class="form-control">'.$DataValue->content.'</textarea>';
+				$template .='</td>';
+				$template .='<td>';
+				$template .='<button class="btn btn-primary success" onclick="save_content('.$DataValue->lid.')"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>';
+				$template .='<button class="btn btn-primary del" onclick="delete_content('.$DataValue->lid.')"><i class="fa fa-trash" aria-hidden="true"></i></button>';
+				$template .='</td>';
+				$template .='</tr>';
+			}
+			$template .='</table>';
+			echo $template;
+		}
+	}
+	
+	public function AddEditDetails(){
+	
+		$title=$this->input->post('title');
+		//$content=htmlentities($this->input->post('content'));
+		$content=$this->input->post('content');
+		$lid=$this->input->post('lid');
+		$data=array("title"=>$title,"content"=>$content,"update_status"=>1);
+		echo $this->livenow_model->UpdateLiveNowContent($data,$lid);
+	
+	}
+	
+	public function DeleteContent(){
+		$lid=$this->input->post('lid');
+		echo $this->livenow_model->DeleteLiveNowContent($lid);
+	
+	}
+	
+}
+?>

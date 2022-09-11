@@ -1,0 +1,1627 @@
+/* --------------------------------------------------------
+Style Sheet for Dinamani.com
+
+Author: Vidyut Info Solution, Chennai
+Author Email: info@vidyutinfo.com
+Author Website: http://vidyutinfo.com
+----------------------------------------------------------*/
+@charset "utf-8";
+@media only screen and (min-width: 992px) {
+ .photo-img {
+ padding-left: 0!important;
+}
+ .eight-sports .col-lg-3 {
+ width: 24.222%;
+}
+.menu2 li:hover .MenuItem, .menus li:hover .MenuItem {
+ background: #f3f3f3!important;
+ color:#000 !important;
+}
+.MultiSection {
+ border-top:none;
+}
+.MobileNav {
+ display: none;
+}
+.logo_pad p {
+ display:none;
+}
+}
+@media only screen and (max-width: 767px) {
+ .SocialCenter, .SocialCenter a, .navbar-collapse nav li, .navbar-collapse ul li, .religion-head h4, .search1 {
+ float: none;
+}
+ .loc {
+ text-align:center;
+}
+ .part-logo {
+ display:none;
+}
+ .SocialCenter {
+ text-align:center;
+}
+ .life-box3, .life-thodar {
+ margin-bottom:10px;
+}
+ .panchangam-lead .towel-rasi {
+ border:none;
+}
+ .mani-img img, .mani-img2 img {
+ width: 94px;
+}
+ .cinema-list ul li, .lead-list li {
+ width: 100%;
+}
+ .autoplay {
+ display: none;
+}
+ .SubSectionLeft, .arrow-left3, .arrow-right1, .arrow-right3, .book1, .cinema-sec .lead-stories .carousel-control, .navbar-collapse .menus li:first-child, .video-boder {
+ display: none;
+}
+ .top-gap {
+ margin:10px auto;
+ width:52%;
+}
+ .video-box {
+ padding-top: 10px;
+}
+ .video-p {
+height:auto;
+}
+ .move img, .move2 img {
+ margin: 0;
+}
+ .research .box-one {
+ height: 174px;
+}
+ .child-wrold1, .popular, .side-gap .book-store {
+ margin-bottom: 10px;
+}
+ .photo p {
+ height: auto!important;
+}
+ .pad-left {
+ padding-left: 15px!important;
+}
+ .resp-tab-content {
+ padding: 6px!important;
+}
+ .resp-tabs-list li {
+ border-radius: 0;
+}
+ .resp-tab-active {
+ border-radius: 0!important;
+}
+ .select-cinema li a {
+ font-size: 11px;
+}
+ h2.resp-accordion {
+ background: 0 0!important;
+}
+ .cinema-list {
+ padding-left: 15px!important;
+}
+ .navbar-form {
+ width: 100%;
+ margin: 8px 0;
+ padding: 0;
+}
+ .form-vote li {
+ float: none;
+ font-size: 17px;
+}
+ .cen-special li {
+ margin: 5px 0;
+ border: 2px solid #ccc;
+ background: #fdfcd9;
+ overflow: hidden;
+}
+ .spe-dec, .spe-dec2 {
+ border: none;
+ background: 0 0;
+ border-radius: 0;
+ margin: 0;
+}
+ .spe-img, .spe-img2 {
+ margin-top: 0;
+ width: 26%;
+}
+ .cen-special li:last-child {
+ border: 2px solid #ccc!important;
+}
+ .special-dec, .special-dec2 {
+ border: none;
+ background: 0 0;
+ border-radius: 0;
+ margin: 0;
+ padding: 4px 14px 5px 5px;
+}
+ .special-img, .special-img2 {
+ margin-top: 0;
+ width: 23%;
+}
+ .cen-special1 li {
+ margin: 5px 0;
+ border: 2px solid #bfe2f5;
+ background: #ebf6fc;
+}
+ .religion-head {
+ margin-left: 0;
+}
+ .cen-special1 li:last-child {
+ border: 2px solid #bfe2f5!important
+}
+ .special-dec p, .special-dec2 p {
+ font-size: 15px;
+}
+ .cen-videoimg img {
+ margin-bottom: 0;
+}
+ .cen-videoimg figcaption {
+ margin-bottom: 20px;
+}
+ .follow, .health-doctor {
+ margin-bottom: 10px;
+}
+ .box-color3 img, .box-one img {
+ width: 102px;
+}
+ .kural-img img {
+ width: 60px;
+}
+ .lead-stories .carousel-indicators2 {
+ top: 1.2%;
+}
+ .old-stick, .old-stick1, .rel-left, .rel-right {
+ display: none;
+}
+ .religion-join .padding-out {
+ padding: 15px;
+}
+ .thodar img {
+ width: 100%;
+}
+ .religion-join {
+ padding-bottom: 0
+}
+ .padding-out.padding-out1 {
+ padding: 15px!important;
+}
+ .mani-img, .mani-img2 {
+ width: 121px;
+}
+ .mani-img2 {
+ margin-right: 0;
+}
+ .ithal-date {
+ text-align: -moz-center;
+ width: 100%;
+}
+ .breaking {
+ width: 79px;
+}
+ .arrow-right-break {
+ top: 6px !important;
+}
+ .flex-both .slides li img {
+ width: 100%;
+}
+ .flex-both .slides li p {
+ width: 100%;
+ min-height: inherit;
+}
+ .box-one .slick-next {
+ right: 42%;
+}
+ .box-one .slick-prev {
+ left: 43%;
+}
+ .cen-special li:nth-child(even) .spe-dec, .cen-special li:nth-child(odd) .spe-dec, .cen-special1 li:nth-child(odd) .special-dec, .cen-special1 li:nth-child(even) .special-dec {
+ border:none;
+}
+ .gal-sub-list {
+ margin-top:10px;
+}
+ .ColumnSpaceRight {
+ padding-right:15px;
+}
+ .cart {
+ margin-bottom:10px;
+}
+ .image-wid img {
+ width: 100px !important;
+}
+ .pair-auto .ithal-date img {
+ width:119px;
+}
+ .ithal-date {
+ width:121px;
+}
+.child-wrold .box-one .slick-prev {
+ left:45% !important;
+}
+ .pair-auto .ithal-date img {
+ width:110px;
+}
+ .pair-auto .ithal-date img {
+ width:104px;
+}
+ .arrow-grey {
+ right:49%;
+}
+ .rasi-content {
+ min-height:0;
+ border-top:none;
+}
+ .gallery-sub-list .col-lg-4:first-child, .gallery-sub-list .col-lg-4:nth-child(2), .gallery-sub-list .col-lg-4:last-child {
+ padding:0px;
+}
+ .main-gall .cinama-pad-right, .sec-gallery .cinama-pad-right {
+ padding-right:15px !important;
+}
+ .main-gall .cinama-pad-left, .sec-gallery .cinama-pad-left {
+ padding-left:15px !important;
+}
+ .box-one figcaption, .box-one3 p {
+ margin-bottom:20px !important;
+}
+ .child-box2, .child-box3 {
+ padding-bottom:0 !important;
+}
+ .cartoon .box-one {
+ height:auto !important;
+}
+.cartoon {
+ margin-bottom:0;
+}
+.move, .move2 {
+ padding:0;
+}
+.temple {
+ min-height:auto;
+}
+.video-sec div {
+ margin-bottom:0;
+}
+.temple-rel {
+ margin-bottom:5px;
+}
+.cine-head {
+ margin-top:0;
+}
+.cartoon1 .box-one {
+ height:auto;
+}
+.sports-spe li {
+ border-bottom:none;
+}
+.sports-gap {
+ padding-left:0;
+ padding-right:0;
+}
+ .archives-form li {
+ width:100% !important;
+ text-align:left !important;
+}
+.sep-line {
+ display:none;
+}
+.vimar img {
+ margin-top:10px;
+}
+.left_ad_sub {
+ display:none;
+}
+.SubSections ul li {
+ border-bottom: medium none;
+ margin-bottom: 3px;
+ margin-right: 3px;
+ width: auto;
+ float:left;
+}
+.SubSections ul li i {
+ display:none;
+}
+.life-thodar h4 {
+ margin: 5px 0;
+}
+.gal-sub-img .gallery-icon1 {
+ width:5%;
+}
+.main-junction .slick-dots {
+ display:none !important;
+}
+ .search1 label.error {
+ margin-bottom:10px;
+ text-align:center;
+}
+ .remodal.container {
+ width: 93%;
+}
+ .remodal-close {
+ right: 0;
+ top: 0;
+}
+ .CommentForm {
+ padding:10px;
+}
+ .LeftArrow {
+ margin-left: 0;
+ left: 0;
+}
+ .RightArrow {
+ margin-left: 0;
+ right: 0;
+}
+ .ArticleHead {
+ font-size: 18px;
+ line-height: 1.2;
+ margin: 0;
+}
+ .ColumnSpaceRight {
+ padding-right:15px;
+}
+ .image-Zoomin {
+ display:none;
+}
+ .remodal .HeaderContainer, .remodal .SectionContainer {
+ box-shadow:none;
+ padding: 11px 27px 0 35px;
+}
+ .LeftArrow, .RightArrow {
+ background-color:#cfcfcf;
+ top:100px;
+}
+ .FixedOptions {
+ width: auto;
+}
+ .ArticleDetail p img, .ArticleDetail .image img, .ArticleDetail table {
+ width:100% !important;
+}
+ .sub_column_main img {
+ width:85px;
+}
+ .ad_script {
+ display:none;
+}
+ .MultiSectionList {
+ width:100%;
+}
+ .MultiSection {
+ background:#1b91ce;
+}
+ .MultiSectionList .AllList, .MultiSectionList .AllTopic {
+ color:#fff !important;
+}
+ .remodal-close.affix {
+ margin-left: auto;
+ right: 0;
+ top: 0;
+}
+ .tour {
+ padding-right:15px;
+}
+.spe-img {
+ border:none;
+}
+.table-cover {
+ border: 1px solid #ccc;
+ overflow: hidden;
+}
+.Advertise-sec ul li {
+ width: 100%!important;
+ border: none!important;
+}
+ .GalleryDetail .TransLarge {
+ position: initial;
+}
+ .GalleryDetail img {
+ width: 100%;
+}
+ .rasi-content .resp-tab-active {
+ background: #2081b4 !important;
+}
+.ithu_flipbook img {
+ width:100px;
+}
+.video-more p {
+ margin-bottom:0;
+ margin-top:14px;
+ padding-bottom:10px;
+ border-bottom:2px solid #ccc;
+}
+.week-box {
+ height:auto;
+}
+.week1 {
+ border-left:none;
+}
+.sec-12 img, .tour img {
+ box-shadow:none;
+}
+.thoder-inline {
+ height:auto;
+}
+.home-thumbnail {
+ display:none !important;
+}
+.social_icons a {
+ padding:7px;
+}
+.social_icons .twit {
+ padding:7px 10px;
+}
+.input-group .navbar-form .input-group>.form-control {
+ width: 165px;
+}
+.home-gal .slick-dots {
+ top: 30px;
+}
+.border-right {
+ display:none;
+}
+.health-h4 {
+ padding-left: 0;
+}
+.health-h4 p {
+ font-size: 13px;
+}
+.social_icons .fb {
+ padding: 10px 14px;
+}
+.social_icons .google {
+ padding: 10px 11px;
+}
+.social_icons .twit {
+ padding: 10px 12px;
+}
+.social_icons .rss {
+ padding: 10px 13px;
+}
+.remodal {
+ width:100%;
+}
+.videodetail {
+ border:none;
+ border-radius:0;
+}
+.video_detail_skin {
+ border:none;
+}
+.GalleryDetailSlide {
+ border:none;
+}
+.gallery_detail_skin {
+ border:none;
+ border-radius: 0;
+}
+.video-more {
+ border:none;
+}
+.Other-Story h4 {
+ width: auto;
+}
+.Detail-play .GalleryDetailSlide {
+ position:relative;
+}
+.Detail-play .play-pause-icon {
+ display:none;
+}
+.gal-sub-list .gal-sub-des {
+ height:auto !important;
+}
+.gallery-sub-list .gal-sub-list .gal-sub-des-1 {
+ height:auto !important;
+}
+.SubSections ul li a {
+ padding: 3px 5px 4px 5px;
+}
+.job-list figcaption p {
+ position: unset;
+}
+.job-list h4, .sports-lead h4 {
+ height:auto;
+}
+.sports-lead figcaption p {
+ position: unset;
+}
+.sports-lead figcaption {
+ padding:0 5px;
+}
+
+.topic a {
+ padding-bottom:3px !important;
+}
+.SubSections ul li p{
+	padding-left:0;
+}
+.bcrums a{
+	font-size:10px;
+}
+.Other-Story{
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.GalleryDetailList1 p{
+	height:auto;
+}
+.video-box{
+	border:none;
+}
+
+
+.lifestyle-lead .health-list li, .health-list li{
+	visibility:visible;
+	height:auto;
+}
+ .health-list li{
+   border-radius: 0;
+ }
+ .health-list li img{
+	 float:none;
+ }
+ .health-list li figcaption {
+    padding: 5px;
+	padding-bottom: 0;
+}
+.health-list figure{
+	text-align:center;
+}
+.article_body .main-menu{
+	margin-left:0;
+}
+.cssload-container-article figure{
+	left:43% !important;
+}
+.arrow-left, .arrow-right{
+	top:37%;
+}
+.arrow-right{
+	right:1px;
+}
+.UserIcon i{
+	display:none;
+}
+.panchangam-lead .rasipalan{
+	border:none;
+}
+.small-story-height{
+	min-height:auto;
+}
+.section-ad{
+	display:none;
+}
+}
+@media only screen and (max-width: 992px) {
+ .ad img, .book img {
+ display: none;
+}
+ .select-state li {
+ font-size: 14px!important;
+}
+ .photo-img {
+ padding-left: 0!important;
+}
+ .arrow-right3 {
+ left: 202px!important;
+}
+ .arrow-right1 {
+ border-bottom: 15px solid transparent!important;
+ border-top: 14px solid transparent!important;
+}
+ .move img {
+ margin-bottom: 10px;
+}
+ .temple {
+ margin-bottom: 0;
+}
+ .video-gap1 {
+ margin-bottom: 20px;
+}
+ .tour-line {
+ margin-bottom: 10px;
+}
+ .research div p {
+ font-size: 13px;
+}
+ .child-button1 {
+ padding: 3px;
+}
+ .rasi {
+ height: 226px;
+}
+
+ .add-job, .top-fix2, .nie img {
+ display: none;
+}
+ .cook {
+ height: 205px;
+}
+ .box-one h4 {
+ font-size: 12px!important;
+}
+ .more-read li {
+ width: 100%;
+}
+ .form-list {
+ font-size: 12px;
+}
+ .line p {
+ width: 65%;
+}
+ .research {
+ margin-top: 10px;
+}
+ .padding-both {
+ padding: 15px!important;
+}
+ .pad-right {
+ padding-right: 15px!important;
+}
+ .cen-nail .slick-prev {
+ left: -16px!important;
+}
+
+ .form-vote li {
+ padding-right: 10px;
+}
+ .padding-out {
+ padding: 63px 130px 0 123px;
+}
+ .padding-out.padding-out1 {
+ padding: 63px 147px 0 109px;
+}
+ .old-stick1 {
+ top: -38px;
+}
+ .kural-mean h5 {
+ padding-left: 0;
+ text-align: center;
+}
+ .tour1 h4 {
+ margin:5px 0 5px;
+}
+ .child-box2 img, .child-box3 img {
+ width:107px;
+}
+.health-doctor .health-box {
+ height:auto;
+}
+.cinama-pad-left {
+ padding-left: 15px !important;
+}
+.job-sec img {
+ margin-bottom: 2px;
+}
+ .home-thumbnail .slick-prev, .home-thumbnail .slick-next {
+ top:25%;
+}
+.top-fix.affix {
+ position:unset !important;
+}
+.AllSectionHover:hover .MultiSection {
+ display:block;
+}
+.MultiSection {
+ display:block;
+}
+.scrollToTop {
+ bottom:20px;
+ right:3%;
+}
+.GalleryDetail img {
+ box-shadow: none;
+ border: none;
+ margin: 0;
+}
+.sports-lead .padding-both {
+ padding:0 !important;
+}
+.navbar-collapse .menus li:first-child {
+ display:none;
+}
+.post {
+ padding-top:0;
+ width: 100%;
+ float: left;
+}
+.post .tb {
+ width: 100%;
+ margin-bottom:5px;
+}
+.sports-list .box-one h4 {
+	height:auto;
+	overflow:visible;
+}
+}
+@media only screen and (max-width: 1200px) {
+ .select-state li {
+ font-size: 11px;
+}
+ .photo p {
+ height: 144px;
+}
+ .box-one3 {
+ border-radius: 0;
+}
+ .week {
+ border-right: none;
+}
+ .form-list {
+ margin-left: 1px;
+}
+ .rasi-tap li {
+ font-size: 12px;
+ margin-left: 2px;
+}
+ .date h1 {
+ font-size: 5em!important;
+}
+ .tour-list {
+ font-size: 11px;
+}
+ .arrow-right3 {
+ left: 178px;
+}
+ .arrow-right1 {
+ border-bottom: 9px solid transparent;
+ border-top: 10px solid transparent;
+ top: 0
+}
+ .tab-world2 li a {
+ font-size: 14px;
+}
+ .cartoon1 .box-one1 img {
+ width: auto;
+}
+ .kids-story img {
+ width: 172px;
+}
+ .box-one .weel img {
+ padding: 0 70px 10px;
+ width: 300px;
+}
+}
+@media only screen and (max-width: 1199px) {
+ .menu2 li a {
+ padding: 7px 15.7px!important;
+}
+ .rasi-tap li a {
+ padding: 10px 15.9px 8px 46.9px;
+}
+
+ .cartoon .box-one {
+ height: auto;
+}
+ .arrow-right1 {
+ border-bottom: 15px solid transparent;
+ border-left: 20px solid #1b91ce;
+ border-top: 14px solid transparent;
+}
+ .rasi-12 img {
+ margin: 0 11px;
+ width: 15%;
+}
+ .cook figcaption p {
+ margin: 1px;
+}
+ .child-wrold, .child-wrold1 {
+ margin-bottom: 10px;
+}
+ .side-gap .book-store {
+ padding-right: 15px!important;
+}
+ .side-gap .book-store1 {
+ padding-left: 15px!important;
+}
+ .cook {
+ height: 211px;
+}
+ .child-wrold1, .side-gap .book-store {
+ margin-bottom: 10px;
+}
+ .tour-list li {
+ float: left;
+ width: 100%;
+}
+ .life-box1, .life-box2 {
+ margin-bottom:10px;
+}
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+ .mani-mob {
+ width: 50%;
+}
+}
+ @media only screen and (min-width: 768px) {
+ .resp-vtabs .resp-tabs-list li {
+ background: 0 0!important;
+}
+ .remodal .SectionContainer {
+ position:relative;
+}
+.navbar-form .input-group>.form-control {
+ width: 170px;
+ font-size: 11px;
+}
+}
+@media only screen and (min-width: 530px) {
+ .breakingNews>ul {
+left:110px !important;
+}
+}
+@media only screen and (max-width: 500px) {
+ .move img, .move2 img {
+ margin-left: 0;
+}
+ .arrow-left3, .arrow-right3 {
+ display: none;
+}
+ .main_logo img {
+ width:100%;
+}
+ .MobileNav .navbar-toggle {
+ padding: 7px 1px;
+}
+ .MobileSearch i, .MobileShare span i:first-child {
+ font-size:20px;
+}
+ .MobileNav .navbar-toggle .icon-bar {
+ height: 3px;
+ width: 23px;
+}
+ .MobileSearch, .MobileShare {
+ padding: 5px 10px;
+}
+ .MobileNav {
+ margin: 18% 0 !important;
+}
+li.MobileShare {
+ padding: 5px 6px 2px;
+}
+.breaking {
+ padding:0;
+}
+ .post .tb {
+ width:100%;
+ margin-bottom:10px;
+}
+.MobileInput {
+ bottom: -5%;
+}
+}
+@media only screen and (max-width: 600px) {
+ .relagion-story figure, .sports-thum .sports-thum-des, .sports-thum .sports-thum-img {
+ width: 100%;
+}
+ .relagion-story figcaption {
+ width: 100%;
+ padding-left: 3px;
+ padding-right: 5px;
+}
+ .religion-arrow-left, .religion-arrow-right {
+ display: none;
+}
+ .relagion-story1 figure {
+ margin-left: 0;
+}
+ .sports-thum .sports-thum-des {
+ padding:0;
+}
+}
+@media only screen and (min-width:1551px) {
+   /*article*/
+   .main-menu {
+ width:1140px;
+}
+ .container, .article_body .main-menu {
+ width:1170px;
+}
+ .remodal .SectionContainer, .remodal .FooterContainer {
+ width:1090px;
+}
+ .remodal-close.affix {
+ margin-left:1030px;
+}
+}
+@media only screen and (min-width: 1297px) and (max-width: 1550px) {
+ .cartoon .cart {
+ padding-right: 0;
+}
+ .arrow-right1 {
+ right: -19px;
+}
+
+ .photo p {
+ height: 146px;
+}
+ .temple {
+ padding: 0 0 4px 10px!important;
+}
+.temple {
+ min-height:76px;
+}
+ .arrow-left3, .arrow-right3 {
+ top: 30px;
+}
+ .tour-tap {
+ padding: 0 0 0 34px!important;
+}
+ .research div {
+ padding-right: 3px!important;
+}
+ .arrow-grey span {
+ width: 8px;
+}
+ .box-li li {
+ padding: 3px 0 5 px 4px;
+ font-size:11px;
+}
+ .rasi .arrow {
+ padding-right: 122px;
+}
+ .rasi-12 {
+ padding: 3px 1px;
+}
+ .people-mind {
+ padding: 0!important;
+}
+ .side-gap .book-store {
+ padding-right: 5px!important;
+}
+ .side-gap .book-store1 {
+ padding-left: 5px!important;
+}
+ .play-icon1 {
+ right: 5px;
+}
+ .health .cart, .health-food .food-box {
+ padding-right: 0;
+}
+ .menu2 li a {
+ padding: 4px 7px!important;
+}
+ .kural-img img {
+ width: 64px;
+}
+ .photo-sec-next .slick-next, .photo-sec-next .slick-prev {
+ top: 40%;
+}
+.photo-sec-next .slick-next {
+ right:3px;
+}
+ .relagion-story figcaption {
+ width: 57.8%;
+}
+ .thodar img {
+ width: 136px;
+}
+ .padding-out {
+ padding: 20px 32px 0 51px;
+}
+ .padding-out.padding-out1 {
+ padding: 20px 48px 0 35px;
+}
+ .religion-arrow-right {
+ top: 39px;
+}
+ .religion-arrow-left {
+ top: 37px;
+}
+ .religion-head {
+ margin-left: 58px;
+}
+ .arrow-grey {
+ right: 63px;
+}
+ .mani-img, .mani-img2 {
+ width: 50%;
+}
+ .child-wrold1 {
+ padding-left: 5px!important;
+}
+ .kids-story .arrow-grey {
+ right: 81px;
+}
+ .kural-mean h5 {
+ padding-left: 32px;
+}
+ .breaking {
+ padding: 3px 6px;
+}
+ .after-vote .vote-yes {
+ width: 40%;
+}
+ .after-vote .vote-no {
+ width: 60%;
+}
+ .main-menu {
+ width: 950px;
+}
+ .flex-both .slides li p {
+ min-height: 160px;
+}
+ .weel img {
+ padding: 0 75px 10px;
+}
+ .right-padding {
+ padding-right:15px;
+}
+.ithal-date img {
+ width:83%;
+}
+.most-read-li li:first-child {
+ padding:4px 0 !important;
+}
+.most-read-content .resp-tabs-list li {
+ padding:4px 0;
+}
+.cook .arrow-grey {
+ right:73px;
+}
+.week-pair {
+ padding:0 0 0 15px !important;
+}
+.cook .arrow-grey {
+ right:67px;
+}
+ .video-more p {
+ margin:20%;
+}
+.rasi-12 img {
+ margin:0 13px;
+}
+.health-doctor {
+ padding-right:5px;
+}
+.sports-padd {
+ padding-right:15px;
+}
+.archives-form .odd {
+ width: 39%;
+}
+ .archives-form .double-form input, .archives-form select {
+ width:168px;
+}
+.child-wrold1.health-doctor {
+ padding-right:15px;
+}
+/*article*/
+  .main-menu {
+ width:950px;
+}
+ .container, .article_body .main-menu {
+ width:980px;
+}
+ .post .tb {
+ width: 174px;
+}
+ .FixedOptions {
+ width:900px;
+}
+ .LeftArrow {
+ top:360px;
+}
+ .RightArrow {
+ margin-left: 898px;
+ top:360px;
+}
+ .remodal .SectionContainer, .remodal .FooterContainer {
+ width:900px;
+}
+ .MultiStatesContents, .MultiCities {
+ width: 638px;
+}
+ .ArticleDetail p img, .ArticleDetail .image img, ArticleDetail table {
+ max-width:455px !important;
+}
+ .video-boder.video-mov {
+ top: 86px;
+}
+ .slick-dots {
+ right: 0 !important;
+}
+.rasi1 p {
+ padding:0 5px 0 0;
+}
+.menus li a.MenuItem {
+ padding: 4px 7px;
+}
+.menu.top-fix2 li a {
+ padding: 4px 6px!important;
+}
+.health-h4 {
+ padding-left: 13px;
+}
+.job-list figcaption p {
+ bottom: -98px;
+}
+.sports-lead figcaption p {
+ bottom: -210px;
+}
+.parigara-thalangal img {
+ width: 120px;
+}
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1296px) {
+    /*article*/
+	.main-menu {
+ width:1140px;
+}
+ .container, .article_body .main-menu {
+ width:1170px;
+}
+ .remodal .SectionContainer, .remodal .FooterContainer {
+ width:1090px;
+}
+ .remodal-close.affix {
+ margin-left:968px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+ .photo p {
+ height: 170px!important;
+}
+ .religion-head {
+ margin-left: 200px;
+}
+ .rasi-12 {
+ width: 51%;
+}
+ .col-sm-12.ColumnSpaceRight, .col-sm-9.ColumnSpaceRight {
+ padding-right:15px;
+}
+ .pair-one.cartoon-sec img, .pair-one img {
+ width:102px;
+}
+ .arrow-grey {
+ right:49%;
+}
+ .rasi-12 {
+ width:100%;
+ text-align:center;
+}
+ .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+ max-height: 402px;
+}
+ .old-stick1.old-stick-next, .old-stick.old-stick-next {
+ margin: auto 20px;
+}
+.padding-out.padding-out1 {
+ padding: 63px 127px 0 127px;
+}
+ .remodal-close.affix {
+ margin-left: 618px;
+ top: 10;
+}
+ .top-fix.affix {
+ width: calc(750px - 30px);
+}
+ .ithu_flipbook img {
+ width:100px;
+}
+ .cartoon .box-one {
+ height:210px;
+}
+.religion-join {
+ padding-bottom: 65px;
+}
+.width-107{
+	width:107px;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+ .special-img, .special-img2 {
+ width: 100%;
+}
+ .special-dec, .special-dec2 {
+ width: 100%!important;
+}
+ .job-sub img, .job-sub p {
+ width: 100%;
+}
+ .box-one .slick-prev {
+ left:39%;
+}
+ .child-wrold .box-one .slick-prev {
+ left:42% !important;
+}
+.nigalvugal_even li {
+ border-bottom:1px solid #ccc;
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+ .vote-button img {
+ width: 73px;
+}
+ .thodar img {
+ width: 137px;
+}
+ .padding-out.padding-out1 {
+ padding: 20px 48px 0 34px;
+}
+ .padding-out {
+ padding: 20px 33px 0 50px;
+}
+ .relagion-story figcaption {
+ width: 57%;
+}
+ .relagion-story figure {
+ width: 40.7%;
+}
+ .religion-head {
+ margin-left: 78px;
+}
+ .arrow-grey {
+ right: 141px;
+}
+ .mani-img, .mani-img2 {
+ width: 50%;
+}
+
+ .ithal-date img {
+ width: 95%;
+}
+ .arrow-right1 {
+ right: -20px;
+}
+ .menu2 li a {
+ padding: 7px 14.3px!important;
+}
+ .kural-img img {
+ width: 60px;
+}
+ .main-menu {
+ width: 940px;
+}
+ .flex-both .slides li p {
+ min-height: 154px;
+}
+ .pair-one .sports-padd .cart:first-child, .pair-two .cart:first-child {
+ margin-bottom:10px;
+}
+ .image-wid img {
+ width: 100px;
+}
+ .video-more p {
+ margin:20%;
+}
+.box-color1, .cartoon .child-box2.cook, .cartoon .child-mani {
+ margin-bottom:10px;
+}
+.health .box-one {
+ margin-bottom:10px;
+}
+ .box-one figcaption, .box-one3 p {
+ margin-bottom:20px;
+}
+.child-box2, .child-box3 {
+ padding-bottom:0;
+}
+.box-one .slick-next {
+ right: 41%;
+}
+.box-one .slick-prev {
+ left: 38%;
+}
+.health-doctor .health-box {
+ height:auto;
+}
+.cartoon1 .box-one {
+ height:auto;
+}
+ .archives-form .odd {
+ width: 39%;
+}
+.archives-form .double-form input, .archives-form select {
+ width:166px;
+}
+ .puthumai .health-pad-right-0 {
+ margin-bottom:10px;
+}
+
+.MultiCities, .MultiStatesContents {
+ width: 638px;
+}
+/*article*/
+.main-menu {
+ width:949px;
+}
+ .container, .article_body .main-menu {
+ width:980px;
+}
+ .post .tb {
+ width: 170px;
+}
+ .FixedOptions {
+ width: 900px;
+}
+ .LeftArrow {
+ top:360px;
+}
+ .RightArrow {
+ margin-left: 898px;
+ top:360px;
+}
+ .remodal .SectionContainer, .remodal .FooterContainer {
+ width:900px;
+}
+ .ArticleDetail p img, .ArticleDetail .image img, .ArticleDetail table {
+ max-width:455px !important;
+}
+ .video-boder.video-mov {
+ top: 86px;
+}
+ .child-wrold .box-one .slick-prev {
+ left:42%;
+}
+ .tour {
+ padding-right:15px;
+}
+ .tour-line .pad-left {
+ padding-left:15px !important;
+}
+ .week-pair .slick-dots {
+ top:185px;
+}
+.menus li a.MenuItem {
+ padding: 4px 7px;
+}
+.menu.top-fix2 li a {
+ padding: 4px 6px!important;
+}
+.health-h4 {
+ padding-left: 13px;
+}
+.temple {
+ min-height:76px;
+}
+.job-list figcaption p {
+ bottom: -98px;
+}
+.sports-lead figcaption p {
+ bottom: -210px;
+}
+.Sirappu-katturaigal .box-color2 {
+ margin-bottom:10px;
+}
+.Sirappu-katturaigal .box-color2 {
+ margin-bottom:10px;
+}
+.puthumai .cart:first-child, .puthumai .cart:nth-child(2) {
+ margin-bottom:10px;
+}
+.kitchen-corner {
+ margin-bottom:10px;
+}
+
+.vivathamedi .cart:first-child, .valipoo-seithigal .cart:first-child{
+ margin-bottom:10px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+ .line p {
+ width: 87%;
+}
+ .arrow-right-break {
+ top:6px !important;
+}
+ .breaking {
+ width: 11%;
+}
+ .flex-both .slides li p {
+ min-height: 180px;
+}
+	/*article*/
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+ max-height: 402px;
+}
+ .FixedOptions {
+ width: 670px;
+}
+ .RightArrow {
+ margin-left: 669px;
+}
+ .col-sm-12.ColumnSpaceRight, .col-sm-9.ColumnSpaceRight {
+ padding-right:15px;
+}
+ .remodal .SectionContainer {
+ padding: 11px 15px 0 37px;
+}
+ .remodal .SectionContainer, .remodal .FooterContainer {
+ width: 670px;
+}
+ .PrintSocial {
+ margin-left: 2px;
+}
+ .LeftArrow, .RightArrow {
+ top:258px;
+}
+ .ArticleDetail p img, .ArticleDetail .image img, .ArticleDetail table {
+ max-width:618px !important;
+}
+ .video-boder.video-mov {
+ top: 97px;
+}
+/* .box-one .slick-prev {
+ left:39%;
+}
+ .box-one .slick-next {
+ right:42%;
+}*/
+ .child-wrold .box-one .slick-prev {
+ left:39%;
+}
+.job-list figcaption p {
+ bottom: -120px;
+}
+.sports-lead figcaption p {
+ bottom: -242px;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+ .UserIcon {
+ font-size: 25px;
+ width: 7%;
+}
+}
+@media only screen and (max-width: 479px) {
+ .CommentForm {
+ padding: 5px;
+}
+ .UserIcon {
+ font-size: 20px;
+ width: 7%
+}
+ .life-story img, .life-story p, .life-thodar figcaption, .life-thodar figure {
+ width: 100%;
+}
+.nigalvugal_even li:nth-child(even) p{
+	text-align:left;
+}
+ .PrintSocial .csbuttons-count, .PrintSocial .fa_social {
+ font-size: 13px;
+ height: 25px;
+ margin-right: 7px;
+ min-width: 25px;
+}
+ .PrintSocial .fa-caret-left {
+ font-size: 20px;
+ left: 25px;
+ top: 3px;
+}
+ .PrintSocial .fa_social {
+ padding-top: 7px;
+}
+ .pagina a {
+ padding:4px 8px;
+ margin-right:0px;
+ margin-left:4px;
+}
+ .pagina {
+ margin-bottom:0px;
+}
+.news #news_error_throw {
+ bottom:-33px;
+}
+}
+@media only screen and (max-width:991px) {
+ .navbar-collapse.in {
+ overflow-y: auto !important;
+}
+ .navbar-header {
+ float: none;
+}
+ .navbar-toggle {
+ display: block;
+ margin-bottom: 5px;
+ margin-right: 6px;
+ margin-top: 5px;
+ padding: 6px;
+}
+ .navbar-collapse {
+ border-top: 1px solid transparent;
+ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+ .navbar-collapse.collapse {
+ display: none!important;
+}
+ .navbar-collapse.collapse.in {
+ display:block !important;
+}
+ .navbar-nav {
+ float: none!important;
+}
+ .navbar-nav>li {
+ float: none;
+}
+ .navbar-nav>li>a {
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+ .home_logo {
+ display: block;
+ font-size: 24px;
+ height: auto;
+ padding: 7px 11px;
+}
+ a:hover.home_logo {
+ color:#fff !important;
+}
+ .MultiSection {
+ background:#1b91ce;
+}
+ .MultiSectionList .AllList, .MultiSectionList .AllTopic {
+ color:#fff !important;
+}
+ .MultiSectionList, .full_width_menu {
+ width:100% !important;
+}
+ .MultiSection {
+ position:inherit;
+}
+.MultiCities, .MultiStatesContents {
+ display: none!important;
+}
+.AllSectionHover:hover .MultiSection {
+ height:auto;
+ overflow-y:auto;
+}
+.MultiSectionList .AllList {
+ border:none;
+}
+.MultiSectionList {
+ padding-top:0;
+}
+.menus li a.MenuItem {
+ font-size: 12px;
+ font-weight: bold;
+}
+.navbar-fixed-top .navbar-collapse {
+ padding-left:15px;
+ padding-right:15px;
+}
+.MultiSection {
+ opacity: 1;
+ visibility:visible;
+ height:100%;
+ overflow-y:auto;
+}
+.brand-logo {
+ display:none;
+}
+.large-screen-search {
+ display: none;
+}
+.line p, .logo_pad {
+ text-align:left;
+}
+.main_logo img {
+ padding-top: 5px;
+}
+.mobile-ad{
+	display:none;
+}
+.logo-mobile{
+	margin: 0;
+    border-bottom: 3px solid #1b91ce;
+    margin-bottom: 6px;
+	padding-bottom:3px;
+}
+.article_body .main-menu{
+	margin-left:0 !important;
+}
+}
+@media print {
+#storyContent .page, .AticleImg {
+	display:block !important;
+}
+.pagination {
+	display:none;
+}
+a[href]:after {
+	content: none !important;
+}
+}

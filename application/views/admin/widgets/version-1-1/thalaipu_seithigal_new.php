@@ -1,0 +1,181 @@
+<?php 
+// widget config block Starts - This code block assign widget background colour, title and instance id. Do not delete it 
+$widget_bg_color         = $content['widget_bg_color'];
+$widget_custom_title     = $content['widget_title'];
+$widget_instance_id      =  $content['widget_values']['data-widgetinstanceid'];
+$widget_section_url      = $content['widget_section_url'];
+$is_home                 = $content['is_home_page'];
+$main_sction_id 	     = "";
+$is_summary_required     = $content['widget_values']['cdata-showSummary'];
+$domain_name             =  base_url();
+$view_mode               = $content['mode'];
+$widgettype=3;
+$temp  = trim(str_replace(["style='background-color:" , ";'"],['',''],$widget_bg_color));
+if($temp!=''){
+	$widgettype = (int) $temp;
+}
+
+//echo $content['sectionID'];
+$show_simple_tab         = "";
+// widget config block ends
+/* $content['widget_title_link']  */
+//getting tab list for hte widget
+$domain_name =  base_url();
+$show_simple_tab = "";
+$show_simple_tab .='<div class="thalaipu_seithigal_single_1">';
+if($widget_section_url!=''){
+	$show_simple_tab .='<h5><span><a href="'.$widget_section_url.'">'.$widget_custom_title.'</a></span></h5>';
+}else{
+	$show_simple_tab .='<h5><span>'.$widget_custom_title.'</span></h5>';
+}
+
+
+
+
+//getting content block starts here .
+if($content['RenderingMode'] == "manual")
+{
+	$content_type = $content['content_type_id'];  // auto article content type
+	$widget_instance_contents 	= $this->widget_model->get_widgetInstancearticles_rendering($widget_instance_id , " " ,$content['mode'],$content['show_max_article']);
+	if (function_exists('array_column')) 
+	{
+		$get_content_ids = array_column($widget_instance_contents, 'content_id'); 
+	}
+	else
+	{
+		$get_content_ids = array_map( function($element) { return $element['content_id']; }, $widget_instance_contents);
+	}
+	$get_content_ids = implode("," ,$get_content_ids); 
+$widget_contents = array();
+if($get_content_ids!='')
+{
+	$widget_instance_contents1 = $this->widget_model->get_contentdetails_from_database($get_content_ids, $content_type, $is_home, $view_mode);	
+	foreach ($widget_instance_contents as $key => $value) {
+		foreach ($widget_instance_contents1 as $key1 => $value1) {
+			if($value['content_id']==$value1['content_id']){
+				$widget_contents[] = array_merge($value, $value1);
+			}
+		}
+	}
+}
+}
+else
+{
+  $widget_contents = array();
+  $content_type = $content['content_type_id'];  // auto article content type
+  if($view_mode=="live"){
+$widget_contents = $this->widget_model->get_all_available_articles_auto($content['show_max_article'], $content['sectionID'] , $content_type ,  $content['mode'], $is_home);
+  }else{
+	  $widget_instance_contents = $this->widget_model->get_all_available_articles_auto($content['show_max_article'], $content['sectionID'] , $content_type ,  $content['mode'], $is_home);
+	if (function_exists('array_column')) 
+	{
+		$get_content_ids = array_column($widget_instance_contents, 'content_id'); 
+	}
+	else
+	{
+		$get_content_ids = array_map( function($element) { return $element['content_id']; }, $widget_instance_contents);
+	}
+	$get_content_ids = implode("," ,$get_content_ids); 
+	if($get_content_ids!='')
+	{
+		$widget_instance_contents1 = $this->widget_model->get_contentdetails_from_database($get_content_ids, $content_type, $is_home, $view_mode);
+		foreach ($widget_instance_contents as $key => $value) {
+			foreach ($widget_instance_contents1 as $key1 => $value1) {
+				if($value['content_id']==$value1['content_id']){
+					$widget_contents[] = array_merge($value, $value1);
+				}
+			}
+		}
+	 }
+  }
+}
+
+			  /********************* content list iteration block - Looping through content list and adding it the list ********************/
+// content list iteration block starts here
+
+   $i =1;
+   $count=count($widget_contents);
+	if(count($widget_contents)>0)
+	{
+		if($widgettype==3 || $widgettype==6){
+			$colvalue = 4;
+		}elseif($widgettype==2 || $widgettype==5){
+			$colvalue = 6;
+		}elseif($widgettype==1 || $widgettype==4){
+			$colvalue = 12;
+		}else{
+			$colvalue = 12;
+		}
+		$my = $widgettype;
+		if($widgettype==5){
+			$my=2;
+		}
+		if($widgettype==4){
+			$my=1;
+		}
+		$responseData = array_chunk($widget_contents ,round(count($widget_contents) /$my));
+		$show_simple_tab .='<div class="thalaipu_seithigal_inner">';
+		for($m=0;$m<count($responseData);$m++){
+			if(count($responseData[$m]) > 0){
+				$show_simple_tab .='<div class="col-md-'.$colvalue.' col-lg-'.$colvalue.' col-sm-12 col-xs-12">';
+				$show_simple_tab .='<ul>';
+			}
+			for($n=0;$n<count($responseData[$m]);$n++){
+				$custom_title        = "";
+				$custom_summary      = "";
+				$original_image_path = "";
+				$imagealt            = "";
+				$imagetitle          = "";
+				$Image600X390        = "";
+				if($content['RenderingMode'] == "manual"){
+					if($responseData[$m][$n]['custom_image_path'] != ''){
+						$original_image_path = $responseData[$m][$n]['custom_image_path'];
+						$imagealt            = $responseData[$m][$n]['custom_image_title'];	
+						$imagetitle          = $responseData[$m][$n]['custom_image_alt'];												
+					}
+					$custom_title        = stripslashes($responseData[$m][$n]['CustomTitle']);
+					$custom_summary      = $responseData[$m][$n]['CustomSummary'];	
+				}
+				if($original_image_path ==""){
+					$original_image_path  = $responseData[$m][$n]['ImagePhysicalPath'];
+					$imagealt             = $responseData[$m][$n]['ImageCaption'];	
+					$imagetitle           = $responseData[$m][$n]['ImageAlt'];	
+				}
+				$show_image	= image_url. imagelibrary_image_path.'logo/dinamani_logo_100X65.jpg';
+				$dummy_image	= image_url. imagelibrary_image_path.'logo/dinamani_logo_100X65.jpg';
+				
+				if($original_image_path !='' && get_image_source($original_image_path, 1)){
+					$imagedetails = get_image_source($original_image_path, 2);
+					$imagewidth = $imagedetails[0];
+					$imageheight = $imagedetails[1];				
+						$Image100X65 	= str_replace("original","w100X65", $original_image_path);
+					if (get_image_source($Image100X65,1) && $Image100X65 != ''){
+						$show_image = image_url. imagelibrary_image_path . $Image100X65;
+					}
+				}
+				$content_url = $responseData[$m][$n]['url'];
+				$param = $content['close_param'];
+				$live_article_url = $domain_name. $content_url.$param;
+				$display_title = ( $custom_title != '') ? $custom_title : ( ($responseData[$m][$n]['title'] != '') ? stripslashes($responseData[$m][$n]['title']) : '' ) ;
+				$display_title = preg_replace('/<p[^>]*>(.*)<\/p[^>]*>/i', '$1', $display_title);
+				if($widgettype!=4 && $widgettype!=6 && $widgettype!=5 ){
+					$display_title = '<a  href="'.$live_article_url.'" class="article_click" ><span><i class="fa fa-clock-o" aria-hidden="true"></i> '.time_elapsed_string($responseData[$m][$n]['last_updated_on'] , false ,2).'</span> '.$display_title.'</a>';
+				}else{
+					$display_title = '<a  href="'.$live_article_url.'" class="article_click" >'.$display_title.'</a>';
+				}
+				
+				$show_simple_tab .='<li>';
+				$show_simple_tab .='<a href="'.$live_article_url.'"><img src="'.$dummy_image.'" data-src="'.$show_image.'" class="img-responsive thalaippu_seithigal_single_1_img img-thumbnail"></a>';
+				$show_simple_tab .='<h6 class="thalaippu_seithigal_single_1_title">'.$display_title.'</h6>';
+				$show_simple_tab .='</li>';
+			}
+			if(count($responseData[$m]) > 0){
+				$show_simple_tab .='</ul>';
+				$show_simple_tab .='</div>';
+			}
+		}
+		 
+	}
+$show_simple_tab .='</div></div>';
+echo $show_simple_tab;
+?>

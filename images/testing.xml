@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+-
+- phpMyAdmin XML Dump
+- version 2.11.10.1
+- http://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Oct 03, 2015 at 04:02 PM
+- Server version: 5.0.45
+- PHP Version: 5.1.6
+-->
+
+<!--
+- Database: 'niedb55'
+-->
+<niedb55>
+  <!-- Table Content -->
+    <Content>
+        <articleid>1975528</articleid>
+        <content>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;ARTICLE schema-version=&quot;3&quot;&gt;&lt;LEADTEXT/&gt;&lt;COM.ESCENIC.DEFAULTMETADATA/&gt;&lt;LASTEDITEDBY/&gt;&lt;DESCRIPTION/&gt;&lt;PHOTOGRAPHER/&gt;&lt;CAPTION/&gt;&lt;BINARY&gt;&lt;![CDATA[&lt;link&gt;&lt;title&gt;pasta.jpg&lt;/title&gt;&lt;href&gt;2014/1/1/0/pasta.jpg&lt;/href&gt;&lt;relation&gt;com.escenic.edit-media&lt;/relation&gt;&lt;content-type&gt;image/jpeg&lt;/content-type&gt;&lt;/link&gt;]]&gt;&lt;/BINARY&gt;&lt;ALTTEXT/&gt;&lt;WATERMARK&gt;&lt;![CDATA[false]]&gt;&lt;/WATERMARK&gt;&lt;TITLE&gt;&lt;![CDATA[pasta.jpg]]&gt;&lt;/TITLE&gt;&lt;/ARTICLE&gt;</content>
+        <publishDate>2014-01-01 00:00:10</publishDate>
+        <lastModified>2014-01-01 00:00:10</lastModified>
+        <Articletype>picture</Articletype>
+        <ArticleState>published</ArticleState>
+        <ArticleURI>pasta.jpg/2014/01/01/article1975528.ece</ArticleURI>
+    </Content>
+</niedb55>

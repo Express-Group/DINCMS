@@ -1,0 +1,844 @@
+
+/* ==========================================================================
+   Remodal necessary styles
+   ========================================================================== */
+
+/* Hide scroll bar */
+
+html.remodal_lock, body.remodal_lock {
+    overflow: hidden;
+}
+
+/* Anti FOUC */
+
+.remodal, [data-remodal-id] {
+    visibility: hidden;
+}
+
+/* Overlay necessary styles */
+
+.remodal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+
+    text-align: center;
+}
+
+.remodal-overlay:after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -0.05em;
+
+    content: '';
+}
+
+/* Fix iPad, iPhone glitches */
+
+.remodal-overlay > * {
+    -webkit-transform: translateZ(0px);
+}
+
+/* Modal dialog necessary styles */
+
+.remodal {
+    position: relative;
+
+    display: inline-block;
+}
+
+
+/* ==========================================================================
+   Remodal default theme
+   ========================================================================== */
+
+/* Default theme font */
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2:700,400&subset=latin,cyrillic);
+
+/* Background for effects */
+
+.remodal-bg {
+    -webkit-transition: -webkit-filter 0.2s linear;
+    -moz-transition: -moz-filter 0.2s linear;
+    -o-transition: -o-filter 0.2s linear;
+    transition: filter 0.2s linear;
+	text-align: right;
+}
+
+body.remodal_active .remodal-bg {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+.remodal-bg a{ color:#466D8E;}
+
+/* Overlay default theme styles */
+
+.remodal-overlay {
+    opacity: 0;
+    background: rgba(33, 36, 46, 0.95);
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+body.remodal_active .remodal-overlay {
+    opacity: 1;
+}
+
+/* Modal dialog default theme styles */
+
+.remodal {
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	margin-right:2%!important;
+
+    background: #fff;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0px 0px 8px #171a24;
+    box-shadow: 0px 0px 8px #171a24;
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    -moz-transition: -moz-transform 0.2s linear;
+    -o-transition: -o-transform 0.2s linear;
+    transition: transform 0.2s linear;
+}
+
+body.remodal_active .remodal {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Modal dialog vertical align  */
+
+.remodal, .remodal-overlay:after {
+    vertical-align: middle;
+}
+
+/* Close button */
+
+.remodal-close {
+	 background-color: #959595;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 34px;
+    position:fixed;
+    right: -16px;
+    text-decoration: none;
+    top: 10px;
+    transition: background 0.2s linear 0s;
+    width: 34px;
+
+	box-shadow:-7px 0px 3px -1px #ccc;
+}
+
+.remodal-close:after {
+	
+	color: #fff;
+    content: "×";
+    cursor: pointer;
+    display: block;
+    font-family: Arial,"Helvetica CY","Nimbus Sans L",sans-serif !important;
+    font-size: 27px;
+    line-height: 29px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+}
+a:hover
+{
+	text-decoration:none;
+}
+.bcrums a
+{
+	font-size:14px;
+	color:#7D7D7D;
+	}
+.bcrums a:hover
+{
+	color:#0d78a9;
+}
+/* Dialog buttons 
+
+.remodal-close:hover, .remodal-close:active {
+    background: #3e5368;
+}
+
+.remodal-close:hover.remodal-close:after, .remodal-close:active.remodal-close:after {
+    color: #f4f4f4;
+}
+
+
+
+.remodal-confirm, .remodal-cancel {
+    display: inline-block;
+    width: 120px;
+    padding: 9px 0;
+    margin: 0 0 5px 0;
+
+    font-size: 10pt;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-clip: padding-box;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.remodal-confirm {
+    border: 2px solid #16a085;
+    background: #f4f4f4;
+    color: #16a085;
+}
+
+.remodal-confirm:hover, .remodal-confirm:active {
+    background: #16a085;
+    color: #f4f4f4;
+}
+
+.remodal-cancel {
+    border: 2px solid #c0392b;
+    background: #f4f4f4;
+    color: #c0392b;
+}
+
+*/
+
+
+
+.width-70
+{
+	width:65%;
+	float:left;
+	text-align:left;
+	padding-right:18px;
+}
+.width-30
+{
+	width:35%;
+	float:left;
+	text-align:left;
+}
+.font_size
+{
+	
+}
+.font_size a
+{
+	background-color:#333;
+	color:#fff;
+	padding:5px;
+	border-radius:50%;
+	text-align:center;
+	margin:0px 3px;
+}
+
+.img_caption
+{
+	color:#fff;
+	background-color:#000;
+	padding:5px;
+	position:relative;
+	width:270px;
+	float:left;
+	opacity:0.7;
+	top:120px;
+}
+.img_caption p
+{
+	color:#fff;
+	margin:0px;
+}
+.absol
+{
+	position:absolute;
+}
+.update
+{
+	float:left;
+}
+
+.update p
+{
+	font-size:12px !important;
+}
+.gimages img
+{
+	float:left;
+	padding-right:20px;
+}
+.detail p
+{
+	font-size:14px;
+}
+.width-270
+{
+	float: left;
+    margin-bottom: 12px;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 270px;
+}
+
+.rarticle
+{
+	 background-color: #0e78aa;
+    border-radius:8px 8px 0px 0px;
+    color: #fff;
+    padding: 10px 10px 7px;
+    text-align: center;
+}
+.rel_inner
+{
+	background-color:#c4e6f8; float:left; border-radius: 8px; width:270px; margin-top:6px;
+}
+.width-270 p
+{
+	border-bottom:1px solid #CCC;
+	margin: 0 15px;
+    padding: 10px 0;
+	}
+	.center
+	{
+		left: 68px;
+    margin-top: 10px;
+    position: absolute;
+    text-align: center;
+    top: -28px;
+	}
+	.width-270 i
+	{
+		padding-right:4px;
+	}
+	.pagina
+	{
+		margin-top: 20px;
+    text-align: center;
+	}
+	.pagina a
+	{
+		background-color: #d9d9d9;
+    border-radius: 2px;
+    box-shadow: 12px #000;
+    color: #333;
+    font-weight: 500;
+    margin-right: 3px;
+    padding: 6px 12px;
+    text-align: center;
+	}
+	.pagina a:hover
+	{
+		background-color:#666;
+		color:#fff;
+	}
+	.pagina .active
+	{
+		background-color:#666;
+		color:#fff;		
+	}
+.tags
+{
+	border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin: 25px 0;
+    padding: 14px 0 4px;
+	float:left;
+	width:100%;
+	
+}
+.tags span
+{
+	color:#0d78a9;
+	float:left;
+	padding-top:5px;
+	margin-right:10px;
+}
+.tags a
+{
+	background-color: #d9d9d9;
+    border-radius: 12px;
+    color: #666;
+    font-size: 13px;
+	margin:4px;
+    padding: 5px 9px;
+	float:left;
+	margin:0 10px 10px 0;
+}
+.tags a:hover
+	{
+		background-color:#666;
+		color:#fff;
+	}
+.comment
+{
+	background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0 15px 15px;
+	float:left;
+}
+.comment span
+{
+	color: #4f4f4f;
+    float: left;
+    font-size: 41px;
+}
+.comment textarea
+{
+	border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 6px;
+    width: 89%;
+	margin-left:10px;
+}
+
+/* start social search*/
+.social_icons
+{
+	margin:13px 0px 10px;
+	float:left;
+}
+.social_icons a
+{
+	padding:7px;
+	color:#fff;
+	border-radius:50%;
+}
+.social_icons a:hover
+{
+	background-color:#337ab7;
+	color:#fff;
+}
+.social_icons .fb
+{
+	background-color:#4672db;
+	padding-right:11px;
+	padding-left:11px;
+}
+.social_icons .google
+{
+	background-color:#e41919;
+	padding-left:10px;
+}
+.social_icons .twit
+{
+	background-color:#54bcf2;
+	padding:8px 9px;
+}
+.social_icons .rss
+{
+	background-color:#f0b660;
+	padding-right:11px;
+	padding-left:11px;
+}
+.post
+{
+	padding:7px 7px 7px 0px;;
+	float:left;
+}
+.submit_post
+{
+	padding:6px 11px;
+	background-color:#1f56a6;
+	color:#fff;
+	border:none;
+	float:left;
+}
+.post .tb
+{
+    margin-right: 6px;
+    width: 177px;
+	float:left;
+	margin-bottom:5px;
+}
+
+.posts
+{
+	float:left;
+	
+}
+.posts .user
+{
+	color: #4f4f4f;
+    float: left;
+    font-size: 41px;
+	margin:0px 13px 25px 20px;
+	height:90px;
+}
+.posts h6
+{
+	color:#1f56a5;
+	font-size:14px;
+}
+.posts p
+{
+	margin-bottom:5px;
+}
+.posts .post_time
+{
+	color:#666;
+}
+
+
+
+
+/* second part*/
+.more
+{
+	float:left;
+	margin-top:10px;
+}
+.more p
+{
+    font-size: 14px;
+    line-height: 1.2;
+	margin:0px;
+}
+.more img
+{
+	float:left;
+	padding-right:12px;
+}
+.gallery_br
+{
+	border-bottom:1px solid #ccc;
+	float:left;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+.gallery
+{
+	float:left;
+	padding-top:10px;	
+}
+.g_whole
+{
+	float:left;
+}
+.gimages
+{
+	float:left;
+	position:relative;
+	padding-bottom:10px;
+}
+.gallery img
+{
+	float:left;
+	width:auto;
+	padding:0px;
+	margin-bottom:3px;
+
+}
+.gal_bg
+{
+	background-color:#000;
+	position:absolute;
+	opacity:0.7;
+	top:67px;
+}
+.gal_bg p
+{
+	color:#fff;
+	margin: 0;
+    padding: 5px;
+	line-height:1.2;
+}
+.videos
+{
+	
+}
+.videos h4
+{
+	margin-top:0px;
+}
+.videos img
+{
+	float:left;
+	width:auto;
+	padding:0px;
+	margin-bottom:3px;
+
+}
+.accord1
+{
+	float:left;
+	width:100%;
+	margin-bottom:20px;
+}
+.ad2 img
+{
+	margin-top:32px;
+}
+
+/* Media queries
+   ========================================================================== */
+
+@media only screen and (min-width:1297px){
+    .remodal {
+       
+        margin: 20px auto;
+        min-height: 0;
+		width:68%;
+		margin-left:2%;
+
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+}
+
+@media only screen and (min-width:1035px) and (max-width:1296px){
+    .remodal {
+        margin: 20px auto;
+        min-height: 0;
+		width:68%;
+
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+	.width-70
+	{
+		width:63%;
+	}
+	.width-30
+	{
+		width:37%;
+	}
+}
+
+@media only screen and (min-width:991px) and (max-width:1034px){
+    .remodal {
+        margin: 20px auto;
+        min-height: 0;
+		width:85%;
+
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+	.width-70
+	{
+		width:60%;
+	}
+	.width-30
+	{
+		width:40%;
+	}
+}
+@media only screen and (max-width:990px){
+    .remodal {
+        margin: 20px auto;
+        min-height: 0;
+		width:90%;
+
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+	.width-70
+	{
+		width:100%;
+	}
+	.width-30
+	{
+		width:100%;
+	}
+	.posts .user {
+    color: #4f4f4f;
+    float: left;
+	height:auto;
+    font-size: 24px;
+    margin: 0 13px 0 0;
+}
+	.gallery_br
+	{
+		width:100%;
+	}
+	.ad1
+	{
+		text-align:center;
+	}
+	.arrow_right
+	{
+	color: #666;
+    font-size: 15px;
+    padding-left: 296px;
+    width: 100%;
+	}
+	.remodal
+	{
+		padding:15px;
+	}
+}
+@media only screen and (max-width:370px)
+{
+	.post .tb
+	{
+		margin-bottom: 5px;
+    margin-right: 6px;
+    width: 177px;
+	}
+	.ad1 img
+	{
+		display:none;
+	}
+	.arrow_right
+	{
+		padding-left:136px;
+	}
+	.gallery img
+	{
+		padding:2px 0px;
+	}
+	.pagina a
+	{
+		padding:4px 8px;
+		margin-right:0px;
+	}
+}
+@media only screen and (max-width:334px)
+{
+	.rel_inner
+	{
+		background-color:#c4e6f8; float:left; border-radius: 8px; width:225px; margin-top:6px;
+	}
+	.width-270 {
+    float: left;
+    margin-bottom: 12px;
+	margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+.center {
+    left: 48px;
+    margin-top: 10px;
+    position: absolute;
+    text-align: center;
+    top: -28px;
+}
+.art_links
+{
+	float:left;
+}
+}
+@media only screen and (min-width:350px) and (max-width:500px){
+	.width-270
+	{
+		margin-right:110px;
+	}
+}
+@media only screen and (max-width:517px)
+{
+	.comment span
+	{
+		font-size:24px;
+		padding-right:10px;
+	}
+	.comment textarea
+	{
+		margin-left:0px;
+	}
+}
+@media only screen and (min-width:432px) and (max-width:742px){
+	.tags span
+	{
+		padding-bottom:15px;
+	}
+}
+@media only screen and (max-width:360px)
+{
+	.accordion-section-content p i
+	{
+		height:50px;
+	}
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1034px){
+.LeftArrow{
+	left:4.5%;
+	
+	}
+.RightArrow{
+	right:4.5%;
+	}
+}
+
+
+@media only screen and (max-width:990px){
+.LeftArrow{
+	left:2%;
+	
+	}
+.RightArrow{
+	right:2%;
+	}
+}
+
+
+
+@media only screen and (max-width:960px){
+.LeftArrow{
+	left:2%;
+	
+	}
+.RightArrow{
+	right:2%;
+	}
+}
+
+@media only screen and (max-width:900px){
+.LeftArrow, .RightArrow{
+	font-size:177%;
+	height:5%;
+	}
+}
+
+
+@media only screen and (max-width:767px){
+.LeftArrow, .RightArrow{
+	display:none!important;
+	}
+	
+}
+
+@media only screen and (max-width:1296px){
+.remodal{
+	margin-right:0!important;
+	}
+}
+
+
+@media only screen and (max-width:1175px){
+.ad1 img{
+	display:none!Important;
+	}
+}

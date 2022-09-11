@@ -1,0 +1,10 @@
+
+@font-face {
+  font-family: 'Tamil-Aiswarya-Normal';
+  src: url('fonts/Aiswarya/Tamil-Aiswarya-Normal.eot?#iefix') format('embedded-opentype'),  
+  url('fonts/Aiswarya/Tamil-Aiswarya-Normal.woff') format('woff'), 
+  url('fonts/Aiswarya/Tamil-Aiswarya-Normal.ttf')  format('truetype'), 
+  url('fonts/Aiswarya/Tamil-Aiswarya-Normal.svg#Tamil-Aiswarya-Normal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
